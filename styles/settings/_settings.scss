@@ -1,0 +1,13 @@
+body {
+  font-family: "DM Serif Display", serif;
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 0 var(--content-padding);
+  margin: 0 auto;
+}
+
+.section {
+  margin-top: var(--section-offset);
+}

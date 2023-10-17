@@ -1,0 +1,42 @@
+@mixin flex-all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-all-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-v-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-h-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin text($fz, $clr, $lh: 150%, $fw: 400) {
+  font-size: $fz;
+  color: $clr;
+  line-height: $lh;
+  font-weight: $fw;
+}
+
+@mixin hover {
+  transition: 0.3s;
+
+  &:hover {
+    transition: 0.3s;
+    @content;
+  }
+}

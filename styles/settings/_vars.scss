@@ -1,0 +1,12 @@
+:root {
+  --main-clr: #cda274;
+  --dark-clr: #292f36;
+  --gray-clr: #4d5053;
+  --light-clr: #f4f0ec;
+
+  --section-offset: 200px;
+
+  --content-width: 1200px;
+  --content-padding: 15px;
+  --container-width: calc(var(--content-width) + (2 * var(--content-padding)));
+}

@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("libs/bootstrap-reboot.css");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+:root {
+  --main-clr: #cda274;
+  --dark-clr: #292f36;
+  --gray-clr: #4d5053;
+  --light-clr: #f4f0ec;
+  --section-offset: 200px;
+  --content-width: 1200px;
+  --content-padding: 15px;
+  --container-width: calc(var(--content-width) + (2 * var(--content-padding)));
+}
+
+body {
+  font-family: "DM Serif Display", serif;
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 0 var(--content-padding);
+  margin: 0 auto;
+}
+
+.section {
+  margin-top: var(--section-offset);
+}/*# sourceMappingURL=style.css.map */
