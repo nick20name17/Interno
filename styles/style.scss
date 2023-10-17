@@ -3,10 +3,12 @@
 @import url("libs/bootstrap-reboot.css");
 
 @import "settings/reset";
+
 @import "settings/vars";
 @import "settings/mixins";
 
 @import "components/btns";
+@import "components/header";
 @import "components/text";
 
 @import "settings/settings";

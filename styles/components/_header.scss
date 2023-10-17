@@ -1,0 +1,27 @@
+.header {
+  padding: 50px 0;
+
+  .nav {
+    &__list {
+      @include flex-v-center;
+      column-gap: 50px;
+    }
+
+    &_item {
+      @include hover {
+        color: var(--main-clr);
+      }
+    }
+
+    .search-btn {
+      svg path {
+        transition: 0.3s;
+      }
+
+      &:hover svg path {
+        transition: 0.3s;
+        stroke: var(--main-clr);
+      }
+    }
+  }
+}
