@@ -4,4 +4,16 @@
 
 .text {
   @include text(var(--font-lg), var(--gray-clr), 150%, 400, 0.22px);
+
+  &_xxl {
+    font-size: var(--font-xxl);
+  }
+
+  &_main {
+    color: var(--main-clr);
+  }
+
+  &_center {
+    text-align: center;
+  }
 }

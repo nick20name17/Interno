@@ -11,6 +11,10 @@ body {
     @include flex-all-sb;
     column-gap: 20px;
   }
+
+  &_sm {
+    max-width: 1080px;
+  }
 }
 
 .section {

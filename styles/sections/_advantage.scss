@@ -1,0 +1,16 @@
+.advantages {
+  height: 457px;
+  padding: 150px 0;
+  background-color: var(--light-clr);
+
+  .advatage {
+    @include flex-column;
+    align-items: center;
+    row-gap: 16px;
+
+    &:not(:last-child) {
+      padding-right: 64px;
+      border-right: 1px solid var(--main-clr);
+    }
+  }
+}
