@@ -22,7 +22,6 @@ a {
 }
 
 button {
-  cursor: pointer;
   background-color: transparent;
   border: none;
 }
@@ -43,6 +42,61 @@ ol {
   --content-width: 1200px;
   --content-padding: 15px;
   --container-width: calc(var(--content-width) + (2 * var(--content-padding)));
+  --font-sm: 16px;
+  --font-md: 18px;
+  --font-lg: 22px;
+  --font-h1: 65px;
+  --font-h2: 50px;
+  --shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+}
+
+.btn {
+  font-size: var(--font-md);
+  color: var(--light-clr);
+  line-height: 125%;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 26px 31px;
+  min-width: 220px;
+  height: 75px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+.btn_light {
+  transition: 0.3s;
+  background-color: var(--main-clr);
+}
+.btn_light:hover {
+  transition: 0.3s;
+  background-color: var(--dark-clr);
+}
+.btn_light:hover svg path {
+  stroke: var(--main-clr);
+  transition: 0.3s;
+}
+.btn_light svg path {
+  stroke: var(--dark-clr);
+}
+.btn_dark {
+  transition: 0.3s;
+  background-color: var(--dark-clr);
+}
+.btn_dark:hover {
+  transition: 0.3s;
+  background-color: var(--main-clr);
+}
+.btn_dark:hover svg path {
+  stroke: var(--dark-clr);
+  transition: 0.3s;
+}
+.btn_dark svg path {
+  stroke: var(--main-clr);
+  transition: 0.3s;
 }
 
 .header {
@@ -69,6 +123,22 @@ ol {
   stroke: var(--main-clr);
 }
 
+.first-heading {
+  font-size: var(--font-h1);
+  color: var(--dark-clr);
+  line-height: 125%;
+  font-weight: 400;
+  letter-spacing: initial;
+}
+
+.text {
+  font-size: var(--font-lg);
+  color: var(--gray-clr);
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: 0.22px;
+}
+
 body {
   font-family: "DM Serif Display", serif;
 }
@@ -82,8 +152,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 
 .section {
   margin-top: var(--section-offset);
+}
+
+.hero {
+  margin-top: 57px;
+  height: 758px;
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  background: url("../../img/hero/bg.jpg") no-repeat;
+  padding: 52px;
+  height: 100%;
+}
+.hero .cta {
+  max-width: 434px;
 }/*# sourceMappingURL=style.css.map */

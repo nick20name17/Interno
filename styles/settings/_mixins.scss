@@ -25,11 +25,12 @@
   justify-content: center;
 }
 
-@mixin text($fz, $clr, $lh: 150%, $fw: 400) {
+@mixin text($fz, $clr, $lh: 150%, $fw: 400, $ls: initial) {
   font-size: $fz;
   color: $clr;
   line-height: $lh;
   font-weight: $fw;
+  letter-spacing: $ls;
 }
 
 @mixin hover {

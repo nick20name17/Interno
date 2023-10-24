@@ -1,0 +1,46 @@
+.btn {
+  @include text(var(--font-md), var(--light-clr), 125%, 400, 0.36px);
+  @include flex-all-center;
+  column-gap: 10px;
+
+  padding: 26px 31px;
+  min-width: 220px;
+  height: 75px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+
+  &_light {
+    @include hover {
+      background-color: var(--dark-clr);
+
+      svg path {
+        stroke: var(--main-clr);
+        transition: 0.3s;
+      }
+    }
+
+    background-color: var(--main-clr);
+
+    svg path {
+      stroke: var(--dark-clr);
+    }
+  }
+
+  &_dark {
+    @include hover {
+      background-color: var(--main-clr);
+
+      svg path {
+        stroke: var(--dark-clr);
+        transition: 0.3s;
+      }
+    }
+
+    background-color: var(--dark-clr);
+
+    svg path {
+      stroke: var(--main-clr);
+      transition: 0.3s;
+    }
+  }
+}

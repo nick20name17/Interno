@@ -1,0 +1,16 @@
+.hero {
+  margin-top: 57px;
+  height: 758px;
+
+  .container {
+    @include flex-v-center;
+    background: url("../../img/hero/bg.jpg") no-repeat;
+
+    padding: 52px;
+    height: 100%;
+  }
+
+  .cta {
+    max-width: 434px;
+  }
+}

@@ -9,6 +9,7 @@ body {
 
   &_flex {
     @include flex-all-sb;
+    column-gap: 20px;
   }
 }
 

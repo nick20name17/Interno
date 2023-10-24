@@ -1,0 +1,7 @@
+.first-heading {
+  @include text(var(--font-h1), var(--dark-clr), 125%);
+}
+
+.text {
+  @include text(var(--font-lg), var(--gray-clr), 150%, 400, 0.22px);
+}
