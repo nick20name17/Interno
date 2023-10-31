@@ -44,3 +44,29 @@
     }
   }
 }
+
+.btn-rounded {
+  @include flex-all-center;
+  border-radius: 50%;
+
+  background-color: var(--light-clr);
+
+  @include hover {
+    background-color: var(--main-clr);
+
+    svg path {
+      stroke: var(--light-clr);
+      transition: 0.3s;
+    }
+  }
+
+  &_md {
+    width: 52px;
+    height: 52px;
+  }
+
+  &_lg {
+    width: 70px;
+    height: 70px;
+  }
+}

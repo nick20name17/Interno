@@ -2,15 +2,28 @@
   @include text(var(--font-h1), var(--dark-clr), 125%);
 }
 
+.second-heading {
+  @include text(var(--font-h2), var(--dark-clr), 125%);
+}
+.third-heading {
+  @include text(var(--font-h3), var(--dark-clr), 125%);
+}
+
 .text {
   @include text(var(--font-lg), var(--gray-clr), 150%, 400, 0.22px);
 
   &_xxl {
     font-size: var(--font-xxl);
   }
+  &_sm {
+    font-size: var(--font-sm);
+  }
 
   &_main {
     color: var(--main-clr);
+  }
+  &_gray {
+    color: var(--gray-clr);
   }
 
   &_center {

@@ -48,6 +48,7 @@ ol {
   --font-xxl: 85px;
   --font-h1: 65px;
   --font-h2: 50px;
+  --font-h3: 25px;
   --shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
 }
 
@@ -100,6 +101,31 @@ ol {
   transition: 0.3s;
 }
 
+.btn-rounded {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--light-clr);
+  transition: 0.3s;
+}
+.btn-rounded:hover {
+  transition: 0.3s;
+  background-color: var(--main-clr);
+}
+.btn-rounded:hover svg path {
+  stroke: var(--light-clr);
+  transition: 0.3s;
+}
+.btn-rounded_md {
+  width: 52px;
+  height: 52px;
+}
+.btn-rounded_lg {
+  width: 70px;
+  height: 70px;
+}
+
 .header {
   padding: 50px 0;
 }
@@ -132,6 +158,22 @@ ol {
   letter-spacing: initial;
 }
 
+.second-heading {
+  font-size: var(--font-h2);
+  color: var(--dark-clr);
+  line-height: 125%;
+  font-weight: 400;
+  letter-spacing: initial;
+}
+
+.third-heading {
+  font-size: var(--font-h3);
+  color: var(--dark-clr);
+  line-height: 125%;
+  font-weight: 400;
+  letter-spacing: initial;
+}
+
 .text {
   font-size: var(--font-lg);
   color: var(--gray-clr);
@@ -142,8 +184,14 @@ ol {
 .text_xxl {
   font-size: var(--font-xxl);
 }
+.text_sm {
+  font-size: var(--font-sm);
+}
 .text_main {
   color: var(--main-clr);
+}
+.text_gray {
+  color: var(--gray-clr);
 }
 .text_center {
   text-align: center;
@@ -202,4 +250,53 @@ body {
 .advantages .advatage:not(:last-child) {
   padding-right: 64px;
   border-right: 1px solid var(--main-clr);
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 52px;
+}
+.cards .card {
+  cursor: pointer;
+  transition: 0.3s;
+  width: 340px;
+  padding: 21px;
+  padding-bottom: 37px;
+  border-radius: 62px;
+  border: 1px solid #e7e7e7;
+  box-shadow: var(--shadow);
+}
+.cards .card:hover {
+  transition: 0.3s;
+  background-color: var(--light-clr);
+}
+.cards .card:hover button {
+  background-color: #fff;
+}
+.cards .card__cover {
+  position: relative;
+}
+.cards .card__cover img {
+  border-radius: 45px 45px 0px 0px;
+}
+.cards .card__label {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background-color: var(--light-clr);
+  padding: 4px 11px;
+  max-width: 130px;
+  border-radius: 8px 8px 8px 0px;
+}
+.cards .card__content {
+  margin-top: 21px;
+}
+.cards .card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
