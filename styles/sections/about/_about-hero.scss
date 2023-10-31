@@ -1,0 +1,48 @@
+.about-hero {
+  background: url("../../img/about/hero/bg.jpg") no-repeat;
+  padding-top: 154px;
+
+  &__header {
+    border-radius: 37px 37px 0px 0px;
+    background-color: #fff;
+    max-width: 503px;
+    margin: 0 auto;
+    padding: 41px;
+  }
+
+  &__content {
+    @include flex-v-center;
+
+    flex-direction: column;
+    row-gap: 30px;
+    max-width: 875px;
+    margin: 0 auto;
+    padding: 66px;
+    margin-top: var(--section-offset);
+
+    .quote {
+      position: relative;
+
+      &::before,
+      &::after {
+        content: url("../../../icons/about/hero/decoration.svg");
+        position: absolute;
+        bottom: 50%;
+      }
+
+      &::before {
+        left: -76px;
+        transform: translateY(50%);
+      }
+
+      &::after {
+        right: -76px;
+        transform: translateY(50%) rotateY(180deg);
+      }
+
+      &__text {
+        font-size: 35px;
+      }
+    }
+  }
+}

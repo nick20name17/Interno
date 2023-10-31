@@ -13,6 +13,8 @@
 
 @import "settings/settings";
 
-@import "sections/hero";
-@import "sections/advantage";
-@import "sections/articles";
+@import "sections/home/hero";
+@import "sections/home/advantage";
+@import "sections/home/articles";
+
+@import "sections/about/about-hero";

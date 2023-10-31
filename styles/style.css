@@ -196,6 +196,12 @@ ol {
 .text_center {
   text-align: center;
 }
+.text_uppercase {
+  text-transform: uppercase;
+}
+.text_italic {
+  font-style: italic;
+}
 
 body {
   font-family: "DM Serif Display", serif;
@@ -228,7 +234,7 @@ body {
 .hero .container {
   display: flex;
   align-items: center;
-  background: url("../../img/hero/bg.jpg") no-repeat;
+  background: url("../../img/home/hero/bg.jpg") no-repeat;
   padding: 52px;
   height: 100%;
 }
@@ -299,4 +305,45 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.about-hero {
+  background: url("../../img/about/hero/bg.jpg") no-repeat;
+  padding-top: 154px;
+}
+.about-hero__header {
+  border-radius: 37px 37px 0px 0px;
+  background-color: #fff;
+  max-width: 503px;
+  margin: 0 auto;
+  padding: 41px;
+}
+.about-hero__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  max-width: 875px;
+  margin: 0 auto;
+  padding: 66px;
+  margin-top: var(--section-offset);
+}
+.about-hero__content .quote {
+  position: relative;
+}
+.about-hero__content .quote::before, .about-hero__content .quote::after {
+  content: url("../../../icons/about/hero/decoration.svg");
+  position: absolute;
+  bottom: 50%;
+}
+.about-hero__content .quote::before {
+  left: -76px;
+  transform: translateY(50%);
+}
+.about-hero__content .quote::after {
+  right: -76px;
+  transform: translateY(50%) rotateY(180deg);
+}
+.about-hero__content .quote__text {
+  font-size: 35px;
 }/*# sourceMappingURL=style.css.map */
