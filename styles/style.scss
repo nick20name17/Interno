@@ -3,18 +3,17 @@
 @import url("libs/bootstrap-reboot.css");
 
 @import "settings/reset";
-
 @import "settings/vars";
 @import "settings/mixins";
+@import "settings/settings";
 
 @import "components/btns";
 @import "components/header";
 @import "components/text";
-
-@import "settings/settings";
 
 @import "sections/home/hero";
 @import "sections/home/advantage";
 @import "sections/home/articles";
 
 @import "sections/about/about-hero";
+@import "sections/about/feedback";
