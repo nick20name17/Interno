@@ -1,0 +1,13 @@
+.input,
+.textarea {
+  border: none;
+  border-bottom: 1.5px solid var(--dark-clr);
+  outline: none;
+  font-size: var(--font-lg);
+  padding: 0 13px 13px 0;
+}
+
+.textarea {
+  resize: none;
+  padding-bottom: 130px;
+}

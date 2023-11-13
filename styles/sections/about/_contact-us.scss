@@ -1,0 +1,23 @@
+.about-contact-us {
+  .form {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 80px;
+
+    &-group {
+      @include flex-all-sb;
+      flex-wrap: wrap;
+      gap: 60px 40px;
+
+      .input,
+      .textarea {
+        flex-grow: 1;
+      }
+    }
+
+    .btn {
+      margin: 0 auto;
+      margin-top: 80px;
+    }
+  }
+}
