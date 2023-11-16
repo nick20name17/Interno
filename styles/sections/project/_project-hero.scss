@@ -1,0 +1,12 @@
+.project-hero {
+  background: url("../../img/project/hero/bg.jpg") no-repeat;
+  padding-top: 154px;
+
+  &__header {
+    border-radius: 37px 37px 0px 0px;
+    background-color: #fff;
+    max-width: 503px;
+    margin: 0 auto;
+    padding: 41px;
+  }
+}

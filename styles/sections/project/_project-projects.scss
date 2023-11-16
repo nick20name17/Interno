@@ -1,0 +1,89 @@
+.tabs {
+  @include flex-all-sb;
+
+  max-width: 880px;
+  margin: 0 auto;
+
+  border: var(--border-main);
+  border-radius: 18px;
+
+  .tab {
+    @include hover {
+      background-color: var(--main-clr);
+
+      .tab__btn {
+        color: var(--light-clr);
+      }
+    }
+
+    transition: 0.3s;
+    border-radius: 18px;
+
+    &_active {
+      background-color: var(--main-clr);
+      transition: 0.3s;
+
+      @include hover {
+        background-color: var(--dark-clr);
+      }
+
+      .tab__btn {
+        color: var(--light-clr);
+      }
+    }
+
+    &__btn {
+      padding: 26px 66px;
+    }
+  }
+}
+
+.project-projects {
+  &__cards {
+    margin-top: 60px;
+    column-count: 2;
+    column-gap: 30px;
+  }
+
+  &__card {
+    break-inside: avoid;
+    &:not(:first-child) {
+      margin-top: 35px;
+    }
+  }
+
+  &__content {
+    @include flex-all-sb;
+    column-gap: 10px;
+    margin-top: 24px;
+  }
+}
+
+.pagination {
+  @include flex-all-sb;
+  column-gap: 20px;
+
+  max-width: 270px;
+  margin: 0 auto;
+  margin-top: 60px;
+
+  &__item {
+    &_active {
+      .pagination__btn {
+        border: none;
+        background-color: var(--light-clr);
+      }
+    }
+  }
+
+  &__btn {
+    @include hover {
+      background-color: var(--main-clr);
+    }
+    @include flex-all-center;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    border: var(--border-main);
+  }
+}

@@ -10,7 +10,7 @@
 
     &:not(:last-child) {
       padding-right: 64px;
-      border-right: 1px solid var(--main-clr);
+      border-right: var(--border-main);
     }
   }
 }
