@@ -27,6 +27,7 @@
 
       & img {
         border-radius: 45px 45px 0px 0px;
+        width: 100%;
       }
     }
 
@@ -47,5 +48,11 @@
     &__footer {
       @include flex-all-sb;
     }
+  }
+}
+
+@include respond(desktop) {
+  .cards {
+    justify-content: center;
   }
 }

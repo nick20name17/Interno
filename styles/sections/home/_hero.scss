@@ -7,10 +7,23 @@
     background: url("../../img/home/hero/bg.jpg") no-repeat;
 
     padding: 52px;
+    border-radius: 70px;
     height: 100%;
   }
 
   .cta {
     max-width: 434px;
+  }
+}
+
+@include respond(medium) {
+  .hero {
+    margin-top: 40px;
+    height: 600px;
+
+    .container {
+      padding: 40px;
+      border-radius: 0;
+    }
   }
 }

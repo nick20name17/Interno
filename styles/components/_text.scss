@@ -44,3 +44,19 @@
     font-style: italic;
   }
 }
+
+@include respond(mobile) {
+  .first-heading {
+    font-size: var(--font-h2);
+  }
+
+  .text {
+    font-size: var(--font-md);
+  }
+}
+
+@include respond(mobile-sm) {
+  .first-heading {
+    font-size: var(--font-h3);
+  }
+}

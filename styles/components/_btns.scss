@@ -70,3 +70,9 @@
     height: 70px;
   }
 }
+
+@include respond(mobile) {
+  .btn {
+    height: 65px;
+  }
+}

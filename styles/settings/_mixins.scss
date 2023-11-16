@@ -41,3 +41,34 @@
     @content;
   }
 }
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==desktop {
+    @media only screen and (max-width: 1120px) {
+      @content;
+    }
+  }
+  @if $breakpoint==tablet {
+    @media only screen and (max-width: 980px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==medium {
+    @media only screen and (max-width: 748px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==mobile {
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==mobile-sm {
+    @media only screen and (max-width: 425px) {
+      @content;
+    }
+  }
+}
