@@ -1,7 +1,13 @@
 .advantages {
-  height: 457px;
+  min-height: 457px;
   padding: 150px 0;
   background-color: var(--light-clr);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+  }
 
   .advatage {
     @include flex-column;
@@ -9,8 +15,18 @@
     row-gap: 16px;
 
     &:not(:last-child) {
-      padding-right: 64px;
+      padding-right: 24px;
       border-right: var(--border-main);
+    }
+  }
+}
+
+@include respond(medium) {
+  .advantages {
+    .advatage {
+      &:not(:last-child) {
+        border-right: none;
+      }
     }
   }
 }

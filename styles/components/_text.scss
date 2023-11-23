@@ -3,8 +3,12 @@
 }
 
 .second-heading {
-  @include text(var(--font-h2), var(--dark-clr), 125%);
+  // @include text(var(--font-h2), var(--dark-clr), 125%);
+  font-size: clamp(30px, 5vw, var(--font-h2));
+  color: var(--dark-clr);
+  line-height: 125%;
 }
+
 .third-heading {
   @include text(var(--font-h3), var(--dark-clr), 125%);
 }
